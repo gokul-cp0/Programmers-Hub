@@ -1,0 +1,64 @@
+.mainContainer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 1px;
+  border-top: 4px solid rgb(0, 157, 224);
+}
+.siteLogo{
+  width: 150px;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+.LoginHead form h1{
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 0px;
+
+}
+.LoginHead form{
+  width: 300px;
+}
+.LoginHead form input{
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;    
+  border: 1px solid rgba(0, 0, 0, 0.371);
+  margin:10px 0 ;
+}
+
+.LoginButton{
+  background-color: rgb(31, 136, 217);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.LoginButton:hover{
+  background-color: rgb(13, 107, 179);
+}
+.SignUpLink{
+  margin-top: 20px;
+  font-size: 14px;
+}
+.SignUpLink a{
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+.SignUpLink a:hover{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.errorMsg{
+  font-size: 10px;
+  color: red;
+  margin: 5px 0;
+  text-align: center;
+}

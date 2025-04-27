@@ -1,0 +1,48 @@
+.signUpHead form h1{
+    font-weight: bold;
+    margin-bottom: 40px;
+    letter-spacing: 0px;
+}
+.signUpHead form{
+    width: 300px;
+}
+.signUpHead form input{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    outline: none;    
+    border: 1px solid rgba(0, 0, 0, 0.371);
+}
+form p{
+    font-size: 10px;
+    text-align: left;
+    padding-left: 8px;
+    margin-top: 1px;
+    margin-bottom: 13px;
+    color: red;
+    letter-spacing:0.4px;
+}
+.signUpButton{
+    background-color: rgb(31, 136, 217);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.signUpButton:hover{
+    background-color: rgb(13, 107, 179);
+}
+.loginLink{
+    margin-top: 30px;
+    font-size: 14px;
+}
+.loginLink a{
+    text-decoration: none;
+    letter-spacing: 0px;
+}
+.loginLink a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
