@@ -1,0 +1,83 @@
+.postContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+.PostDiv{
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 50px;
+    padding: 20px;
+    padding-top: 30px;
+}
+.PostDiv h4{
+    margin:0 0 5px 10px;
+}
+.postTitle{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+}
+.postTitle::placeholder{
+    font-weight: normal;
+}
+h4.bodyHead{
+    margin-top: 30px;
+}
+.postBody:focus,.postTitle:focus{
+    outline:2.2px solid rgb(27, 117, 208);
+    outline-offset: 2px;
+}
+.postBody{
+    display: block;
+    border: 2px ridge;
+    width: 100%;
+    min-height: 15em;
+    padding: 10px;
+    overflow: auto;
+    border:2px ridge;
+    font-size: 12px;
+    font-family: monospace;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    outline: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.ErrorSpan{
+    font-size: 10px;
+    color: rgb(200, 50, 50);
+}
+.postButton{
+    background-color: rgb(27, 117, 208);
+    color: white;
+    border: none;
+    padding:12px;
+    border-radius: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.postButton:hover{
+    background-color: rgb(21, 92, 162);
+}
+.postButton:active{
+    background-color: rgb(12, 59, 106);
+}
+
+@media screen and (max-width:700px) {
+    .PostDiv{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .postTitle{
+        font-size: 12px;
+    }
+    .postBody{
+        font-size: 11px;
+    }
+}

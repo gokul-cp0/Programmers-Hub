@@ -1,0 +1,140 @@
+.oneQuesMap{
+    padding:30px;
+}
+.oneQuesMap h5{
+    color: rgb(27, 117, 208);
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+.oneQuesMap .oneQusPre{
+    white-space: pre-wrap; 
+    word-break: break-word;
+    overflow: auto; 
+    font-family: monospace;
+    background: #dfeefa;
+    padding: 30px;
+    border-radius: 8px;
+}
+.oneLikeComment{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    font-size: 10px;
+}
+.oneQuesMap .upvoteLike{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    border-radius: 20px;
+    width: 100px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease,transform 0.2s linear ;
+}
+.upvoteLike.toggle{
+    background-color: rgb(0, 157, 224);
+    color: white;
+    border: none;
+}
+.upvoteLike span{
+    font-size: 12px;
+    margin-left: 6px;
+}
+.oneQuesMap .upvoteLike:hover{
+    background-color: rgb(0, 157, 224);
+    border:none;
+    color: white;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    transform: scale(1.03);
+}
+.oneQuesMap .upvoteLike:active{
+    background-color: rgb(9, 85, 117);
+}
+.postUser.one{
+    position: absolute;
+    right: 75px;
+}
+.OptionIcon{
+    position: absolute;
+    right: 25px;
+    padding:10px 16px 8px 16px;
+    border-radius: 100%;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+.OptionIcon i{
+    font-size: 16px;
+}
+.OptionIcon:hover{
+    background-color:rgb(0, 157, 224,0.4) ;
+}
+.OptionIcon:active{
+    background-color: rgb(0, 157, 224);
+}
+.queOptionMenu{
+    width: 100px;
+    position: absolute;
+    right: -6px;
+    top: 40px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding-top: 10px;
+}
+.queOptionMenu::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height:10px;
+    background-color: white;
+    top: -6px;
+    right: 43px;
+    transform: rotate(45deg);
+    border-left:1px solid rgba(0, 0, 0, 0.3) ;
+    border-top:1px solid rgba(0, 0, 0, 0.3) ;
+}
+.queOptionMenu button{
+    width: 100%;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.queOptionMenu button:last-child{
+    border: none;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+.queOptionMenu button:hover{
+    background-color:rgb(0, 157, 224,0.4) ;
+}
+.queOptionMenu button:active{
+    background-color:rgb(0, 157, 224);
+}
+.queOptionMenu button i{
+    margin-right: 5px; 
+}
+
+@media screen and (max-width:460px) {
+    .oneQuesMap{
+        padding: 10px;
+    }
+    .oneQuesMap h5{
+        font-size: 12px;
+    }
+    .oneQuesMap .oneQusPre{
+        padding:15px ;
+        font-size: 11px;
+    }
+    .postUser.one{
+        right: 15px;
+    }
+}

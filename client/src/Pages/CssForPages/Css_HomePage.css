@@ -1,0 +1,264 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home-nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 4px solid rgb(0, 157, 224);
+    z-index: 1;
+    box-shadow: 0px 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+.home-nav img{
+    width: 110px;
+    margin: 0 20px;
+}
+.search-bar{
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    padding:4px 10px ;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-bar.secondOne{
+    display: none;
+}
+.search-bar svg{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.7);
+}
+.search-bar input{
+    width: 600px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 10px;
+}
+.search-bar:hover{
+    outline: auto;
+}
+.profile-logo img{
+    width: 22px;
+}
+.profile-logo{
+    width: 33px;
+    height: 33px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: border .2s ease-in-out;
+}
+.navbar-icon{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    display: none;
+    margin: 0 30px;
+}
+.profile-logo:hover{
+    border: 2px solid rgb(0, 157, 224,0.4);
+}
+.profile-logo.profileActive {
+    border:2px solid rgb(0, 157, 224);
+}
+.homeContainer{
+    width: 82%;
+    float: right;
+    padding-top: 60px;
+}
+.profile-dropdown{
+    width: auto;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    border: 1px solid rgb(0, 157, 224,0.4);
+    top: 50px;
+    right: 20px;
+    border-radius: 5px;
+    transform: scaleY(-100px);
+    transition:transform 1s ease-in-out;
+}
+.drop-name{
+    margin: 0 20px;
+}
+.drop-logout{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    border-radius: 5px;
+}
+.drop-logout button{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 10px 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+.drop-logout button i{
+    margin-left: 3px;
+}
+
+.drop-logout button:hover{
+    background-color: rgb(0, 157, 224,0.4);
+}
+.drop-logout button:active{
+    background-color: rgb(0, 157, 224);
+}
+.sidebarContainer{
+    width: 18%;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    z-index: 10;
+}
+.sidebar-ul{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+}
+.sidebar-ul a{
+    width: 100%;
+    font-size: 14px;
+    padding:20px 0px 20px 30px ; 
+    cursor: pointer;
+    transition: background-color .2s linear,box-shadow .2s ease;
+    text-decoration: none;
+    color: black;
+
+}
+.sidebar-ul a:hover{
+    background-color: rgb(0, 157, 224,0.4);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.sidebar-ul a:active{
+    background-color: rgb(11, 106, 147);
+}
+.sidebar-ul li i{
+    font-size: 20px;
+    margin-right:10px ;
+    color: rgb(0, 157, 224);
+}
+.active-sidebarLink{
+    background-color: rgb(0, 157, 224,0.4);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.Content{
+    position: relative;
+    top: 60px;
+    left: 18%;
+    width: 82%;
+    overflow-y: auto;
+    padding: 25px 0px;
+}
+.popUpBG{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 3000; 
+    background-color: rgba(0, 0, 0,0.9);  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.popUpLogin {
+    background-color: white;
+    text-align: center;
+    padding:40px 50px 50px;
+    border-radius: 10px;
+}
+.popUpLogin i{
+    font-size:130px;
+    margin-bottom: 10px;
+    color: rgb(27, 117, 208);
+}
+.popUpLogin h6{
+    letter-spacing: .5px;
+    font-size: 16px;
+}
+.popUpLogin button{
+    background-color: rgb(27, 117, 208);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.popUpLogin button:hover{
+    background-color: rgb(21, 92, 162);
+}
+.popUpLogin button:active{
+    background-color: rgb(12, 59, 106);
+}
+
+@media screen and (max-width:1000px) {
+    .search-bar input{
+        width: 300px;
+    }
+    .sidebarContainer{
+        display: none;
+        width: 250px;
+    }
+    .navbar-icon{
+        display: block;
+    }
+    .Content{
+        width: 100%;
+        left: 0;
+
+    }
+}
+@media screen and (max-width:650px) {
+    .home-nav{
+        height: 100px;
+    }
+    .search-bar{
+        display: none;
+    }
+    .search-bar.secondOne{
+        display: flex;
+        margin: 0 20px;
+    }
+    .search-bar input{
+        width: 300px;
+    }
+    .Content{
+        top: 100px;
+    }
+}
+@media screen and (max-width:390px) {
+    .search-bar input{
+        width: 250px;
+    }
+}

@@ -1,0 +1,51 @@
+.replyArea{
+    display: block;
+    padding: 10px;
+    width: 450px;
+    min-height: 8em;
+    overflow: auto;
+    border:2px ridge;
+    font-size: 12px;
+    font-family: monospace;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    outline: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.repliesDiv{
+    padding-top: 30px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+    padding-left: 30px;
+}
+.replyArea:focus{
+    outline:2.2px solid rgb(27, 117, 208);
+    outline-offset: 2px;
+}
+.hrReply{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 1px;
+    margin-bottom: 10px;
+}
+.hrReply::before{
+    content: "Replies";
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 12px;
+    top:-14px;
+    right: -20px;
+}
+
+@media screen and (max-width:550px) {
+    .replyArea{
+        width: 300px;
+    }
+}
+@media screen and (max-width:450px) {
+    .repliesDiv{
+        padding-left: 0px;
+        padding-top: 10px;
+    }   
+}

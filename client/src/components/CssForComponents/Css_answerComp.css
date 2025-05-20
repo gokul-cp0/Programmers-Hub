@@ -1,0 +1,134 @@
+.yourComment{
+    padding:30px 50px;
+    display: block;
+}
+.answerArea{
+    display: block;
+    padding: 10px;
+    width: 460px;
+    min-height: 13em;
+    overflow: auto;
+    border:2px ridge;
+    font-size: 12px;
+    font-family: monospace;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    outline: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.answerArea:focus{
+    outline:2.2px solid rgb(27, 117, 208);
+    outline-offset: 2px;
+}
+.answerButton{
+    background-color:rgb(27, 117, 208);
+    color: white;
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    margin: 30px 0 10px;
+   cursor: pointer;
+   transition: background-color .2s ease-in-out;
+}
+.answerButton:hover{
+    background-color: rgb(21, 92, 162);
+}
+.answerButton:active{
+    background-color: rgb(12, 59, 106);
+}
+.hrAnswer{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 1px;
+    margin-bottom: 30px;
+}
+.hrAnswer::before{
+    content: "Answers";
+    color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    background-color: white;
+    padding: 0 5px;
+    font-size: 12px;
+    top:-14px;
+    right: -20px;
+}
+.ansMap{
+    padding:30px 40px 0px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.4);
+}
+.ansMap h6{
+    color:rgb(0,157,224);
+}
+.ansMap .ansPre{
+    margin-top: 15px;
+    white-space: pre-wrap; 
+    word-break: break-word;
+    overflow: auto; 
+    font-family: monospace;
+    position: relative;
+    padding-bottom: 60px;
+}
+.emptyAnsText{
+    font-size: 10px;
+}
+.AnsOptionIcon{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+.AnsOptionIcon button{
+    border:none;
+    background-color: transparent;
+    padding: 4px 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 9px;
+}
+.AnsOptionIcon .reply.active{
+    background-color:rgb(0,157,224);  
+    color: white; 
+}
+.AnsOptionIcon i{
+    margin-right: 5px;
+}
+.AnsOptionIcon button:hover{
+   outline: 1px solid rgb(0,157,224);
+}
+.AnsOptionIcon button:active{
+    background-color: rgb(0,157,224);
+    color: white;
+}
+.replyDiv{
+    padding:20px 0 ;
+    margin-left: 30px;
+}
+
+@media screen and (max-width:655px) {
+    .yourComment{
+        padding:30px 10px;
+    }
+    
+    .ansMap{
+        padding: 30px 10px;
+    }
+}
+@media screen and (max-width:540px) {
+    .answerArea{
+        width: 250px;
+    }
+    .replyDiv{
+        margin-left: 10px;
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width:450px) {
+    .ansMap .ansPre{
+        font-size: 11px;
+    }
+    .ansMap{
+        padding: 30px 0;
+    }
+    .yourComment{
+        padding: 30px 0;
+    }
+}

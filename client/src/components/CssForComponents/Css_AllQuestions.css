@@ -1,0 +1,114 @@
+.intro{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-bottom:40px;
+}
+.waveHand{
+    width: 50px;
+    margin-right: 10px;
+}
+.allQusHead{
+    margin-left: 40px;
+}
+.allQusHead i{
+    color: rgb(0, 157, 224);
+}
+.alignQuesMap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.quesMap{
+    width: 80%;
+    padding: 20px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin-top: 30px;
+    border-radius: 6px;
+    transition: transform .2s linear;
+    cursor: pointer;
+}
+.quesMap:hover{
+    transform: scale(1.03);
+}
+.quesMap h5{
+    display: inline;
+    color: rgb(21, 92, 162);
+    letter-spacing: 0.5px;
+}
+.quesMap .qusPre{
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    line-clamp: 4;
+    box-orient: vertical;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 100px;        
+    line-height: 1.5em;
+    font-size: 13px;
+    font-family: monospace;
+    margin: 20px 0 20px 10px;
+}
+.likeComment{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.upvote span{
+    margin: 0 10px;
+}
+.postUser{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.postUserName{
+    color:rgb(0, 157, 224);
+    font-weight:500;
+    margin: 0 5px;
+}
+
+@media screen and (max-width:555px){
+    .quesMap{
+        width: 95%;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .quesMap h5{
+        font-size: 12px;
+    }
+    .quesMap .qusPre{
+        font-size: 11px;
+    }
+    .intro{
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .intro h2{
+        font-size: 20px;
+    }
+    .waveHand{
+        width: 35px;
+    }
+}
+@media screen and (max-width:400px) {
+    .intro h2{
+        font-size: 14px;
+    }
+    .waveHand{
+        width: 25px;
+    }
+    .allQusHead{
+        font-size: 13px;
+    }
+    .quesMap h5{
+        letter-spacing: 0;
+
+    }
+
+}
